@@ -8,7 +8,7 @@ $router = new Router();
 
 $router->run();
 {
-    echo 'Router is running';
+  
 }
 
 ?>
