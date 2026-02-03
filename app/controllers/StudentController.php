@@ -11,9 +11,16 @@ Class StudentController
     }
 
     public function create()
+
     {
             echo '<h1>Tambah Siswa</h1>';
             echo '<p>Menampilkan form tambah siswa</p>';
+    }
+
+    public function grow(string $id)
+    {
+        echo '<h1>Detail Siswa';
+        echo "<p>Menampilkan detail siswa ID: {$id}</p>";
     }
 
 }
