@@ -7,6 +7,8 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-900: oklch(39.6% 0.141 25.723);
+    --color-blue-300: oklch(80.9% 0.105 251.813);
+    --color-white: #fff;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -160,7 +162,19 @@
   }
 }
 @layer utilities {
+  .flex {
+    display: flex;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .bg-blue-300 {
+    background-color: var(--color-blue-300);
+  }
   .text-red-900 {
     color: var(--color-red-900);
+  }
+  .text-white {
+    color: var(--color-white);
   }
 }

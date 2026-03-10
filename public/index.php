@@ -1,8 +1,8 @@
-<?PHP
+<?php
 
 require_once '../app/core/Router.php';
+use App\Core\Router;
 
-use app\core\Router;
 
 $router = new Router();
 

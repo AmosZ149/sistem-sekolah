@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="/css/output.css">
 
 <body>
-    <h1 class="text-red-900">Daftar Siswa</h1>
-    <P>Menampilkan daftar siswa</P>
+<header class="bg-blue-300 text-white">
+    <div class="flex justify-between">
+    <a href="/students">sistem-sekolah</a>
+    <a href="/students/create">+ Tambah Siswa</a>
+    </div>
+</header>
 </body>
 
 </html>

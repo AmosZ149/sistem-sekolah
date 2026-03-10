@@ -27,16 +27,16 @@ class Router
         $route['uri'],
       );
       $pattern = '#^' . $pattern . '$#';
-      
-      if (preg_match($pattern, $uri, $matches))
-        array_shift($matches); {
+
+      if (preg_match($pattern, $uri, $matches)) {
+        array_shift($matches);
         require_once '../app/controllers/' . $route['controller'] . '.php';
 
         $controllerClass = 'App\\Controllers\\' . $route['controller'];
         $controller = new $controllerClass();
         $function = $route['function'];
 
-        call_user_func_array([$controller, $function,], $matches);
+        call_user_func_array([$controller, $function], $matches);
         return;
       }
     }
