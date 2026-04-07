@@ -15,7 +15,7 @@
     </div>
 </header>
 <main class="grow container mx-auto">
-    <div class="mt-8">
+    <div class="mt-8 space-y-4">
     <div class="bg-white shadow p-4 rounded-lg">
         <h1 class="font-bold text-2xl">
             Daftar Siswa
@@ -25,7 +25,7 @@
         </p>
     </div>
     <div class="bg-white rounded-lg shadow">
-        <table>
+        <table class="w-full">
             <thead class="bg-gray-200">
                 <tr>
                     <th class="text-left py-3 px-4">No</th>
@@ -33,7 +33,7 @@
                     <th class="text-left py-3 px-4">Kelas</th>
                     <th class="text-left py-3 px-4">NIS</th>
                     <th class="text-left py-3 px-4">No Telpon</th>
-                    <th class="text-left py-3 px-4">Aksi</th>
+                    <th class="py-3 px-4">Aksi</th>
                 </tr>
             </thead>
             <tbody>
@@ -44,7 +44,7 @@
                     <td class="py-3 px-4">1234</td>
                     <td class="py-3 px-4">0812 3456 7890</td>
                     <td class="py-3 px-4">
-                        <div class="flex justify-center item-center">
+                        <div class="flex justify-center items-center gap-4">
                             <a href="" class="text-green-500">Detail</a>
                             <a href="" class="text-yellow-500">Edit</a>
                             <a href="" class="text-red-500">Hapus</a>
