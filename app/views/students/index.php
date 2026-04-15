@@ -20,20 +20,27 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td class="px-4 py-2 text-left">1</td>
-                    <td class="px-4 py-2 text-left">Andi</td>
-                    <td class="px-4 py-2 text-left">11 TKJ 1</td>
-                    <td class="px-4 py-2 text-left">1234</td>
-                    <td class="px-4 py-2 text-left">08123456789</td>
+                <?php foreach ($students as $index => $student): ?>
+                    <tr>
+                        <td class="px-4 py-2 text-left">1</td>
+                            <?= $index + 1?>
+                        <td class="px-4 py-2 text-left">Andi</td>
+                            <?= $student['name']?>
+                        <td class="px-4 py-2 text-left">11 TKJ 1</td>
+                            <?= $student['class'] ?>
+                        <td class="px-4 py-2 text-left">1234</td>
+                            <?= $student['nis'] ?>
+                        <td class="px-4 py-2 text-left">08123456789</td>
+                            <?= $student['phone_number'] ?>
                     <td class="px-4 py-2">
                         <div class="flex justify-center items-center gap-4">
-                            <a href="" class="text-green-500">Detail</a>
-                            <a href="" class="text-yellow-500">Edit</a>
-                            <a href="" class="text-red-500">Hapus</a>
+                            <a href="/students/<?= $student['id'] ?>" class="text-green-500">Detail</a>
+                            <a href="/students/<?= $student['id'] ?>/edit" class="text-yellow-500">Edit</a>
+                            <a href="" class="text-red-500">Hapus</a> 
                         </div>
                     </td>
                 </tr>
+            <?php endforeach?>   
             </tbody>
         </table>
     </div>
