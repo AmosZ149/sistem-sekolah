@@ -22,16 +22,21 @@
             <tbody>
                 <?php foreach ($students as $index => $student): ?>
                     <tr>
-                        <td class="px-4 py-2 text-left">1</td>
+                        <td class="px-4 py-2 text-left">
                             <?= $index + 1?>
-                        <td class="px-4 py-2 text-left">Andi</td>
+                        </td>
+                        <td class="px-4 py-2 text-left">
                             <?= $student['name']?>
-                        <td class="px-4 py-2 text-left">11 TKJ 1</td>
+                        </td>
+                        <td class="px-4 py-2 text-left">
                             <?= $student['class'] ?>
-                        <td class="px-4 py-2 text-left">1234</td>
+                        </td>
+                        <td class="px-4 py-2 text-left">
                             <?= $student['nis'] ?>
-                        <td class="px-4 py-2 text-left">08123456789</td>
+                        </td>
+                        <td class="px-4 py-2 text-left">
                             <?= $student['phone_number'] ?>
+                        </td>
                     <td class="px-4 py-2">
                         <div class="flex justify-center items-center gap-4">
                             <a href="/students/<?= $student['id'] ?>" class="text-green-500">Detail</a>

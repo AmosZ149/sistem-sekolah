@@ -14,9 +14,12 @@ class StudentController extends Controller
     {
         $studentModel = new Student();
         $students = $studentModel->getStudents();
-        $this->view('students.index',
-        ['students' => $students
-        ]);
+        $this->view(
+            'students.index',
+            [
+                'students' => $students
+            ]
+        );
     }
 
     public function create()
@@ -30,12 +33,18 @@ class StudentController extends Controller
         $student = $studentModel->getStudentById((int) $id);
         $this->view('students.show', [
             'student' => $student
-            ]);
+        ]);
     }
 
     public function edit(string $id)
     {
-     $this->view('students.edit');
+        $this->view('students.edit');
+    }
+
+    public function store()
+    {
+        $studentModel = new Student();
+        $studentModel->insert($_POST);
     }
 }
 ?>
